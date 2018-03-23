@@ -30,3 +30,16 @@ Artifact (ou artefato) é o pacote resultante de um build executado com sucesso.
 O Dashboard (ou painel principal) é o local em que temos uma visão completa da execução de todos os jobs do Jenkins. Ele pode ser dividido em views específicas tudo bem, e se temos uma tempestade, temos problemas (figura a seguir).
 
 ![Dashboard e View](./Dashboard_e_view.png)
+
+
+# Executor
+
+São threads que rodam os builds dos jobs. O Jenkins permite que ajuste esse número de executores conforme a sua necessidade, sendo que, por padrão, são configurados apenas dois. Normalmente, um número interessante é um executor para cada core da máquina, por exemplo, uma máquina quadcore trabalharia bem com quatro executores.
+
+# Nó master e slave 
+
+O nó master (mestre) roda o Jenkins e controla nós slaves (escravos), que são as máquinas auxiliares conectadas. 2.9 Workspace É a área de trabalho existente em cada job, onde o Jenkins baixa os arquivos necessários e roda os processos solicitados.
+
+
+# Workspace
+
